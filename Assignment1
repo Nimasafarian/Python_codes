@@ -1,0 +1,12 @@
+1 name = input("enter Student name: ")
+2 last_name = input("enter Student last name: ")
+3 grade = float(input("enter Student grade: "))
+4
+5 average = grade
+6
+7    if average >= 12:
+8    status = "Successful"
+9 else:
+10    status = "Unsuccessful"
+11
+12 print(f"{name} {last_name} with an average grade of {average} in the field of ... is {status}.")
