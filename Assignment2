@@ -1,0 +1,9 @@
+
+1 s = float(input("Enter the first side of the triangle: "))
+2 d = float(input("Enter the second side of the triangle: "))
+3 f = float(input("Enter the third side of the triangle: "))
+4
+5 if s + d > f and s + f > d and d + f > s:
+6    print("Yes, it is possible to draw a triangle with sides {}, {}, and {}.".format(s, d, f))
+7 else:
+8    print("No, it is not possible to draw a triangle with sides {}, {}, and {}.".format(s,d, f))
