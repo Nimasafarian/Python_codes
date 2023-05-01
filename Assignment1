@@ -1,12 +1,20 @@
-1 name = input("enter Student name: ")
-2 last_name = input("enter Student last name: ")
-3 grade = float(input("enter Student grade: "))
-4
-5 average = grade
+
+1 = input("Enter student's name: ")
+2 = input("Enter student's last name: ")
+3 grade1 = float(input("Enter grade for course 1: "))
+4 grade2 = float(input("Enter grade for course 2: "))
+5 grade3 = float(input("Enter grade for course 3: "))
 6
-7    if average >= 12:
-8    status = "Successful"
-9 else:
-10    status = "Unsuccessful"
+7 average = (grade1 + grade2 + grade3) / 3
+8
+9 print("Student name:", name)
+10 print("Average grade:", average)
 11
-12 print(f"{name} {last_name} with an average grade of {average} in the field of ... is {status}.")
+12 if average >= 17:
+13    print("The student's academic status is excellent.")
+14 if average >= 14:
+15    print("The student's academic status is good.")
+16 if average >= 10:
+17    print("The student's academic status is passing.")
+18 else:
+19    print("The student has failed.")
