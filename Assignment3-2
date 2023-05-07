@@ -1,0 +1,11 @@
+import random
+
+array = []
+n = int(input("Enter the length of the list (from 1 to 1000): "))
+
+while len(array) < n:
+    number = random.randint(1, 1000)
+    if number not in array:
+        array.append(number)
+
+print(array)
